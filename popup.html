@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Vanilla</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<div class="container" id="blur">
+		<div class="content">
+			<a href="#" onclick="toggle()"> Read More </a>
+		</div>
+	</div>
+	<div id="popup">
+		<h2> Caixa branca </h2>
+		<a href="#" onclick="toggle()"> Fechar </a>
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var blur = document.getElementById('blur')
+			blur.classList.toggle('active')
+			var popup = document.getElementById('popup')
+			popup.classList.toggle('active')
+		}
+	</script>
+		
+</body>
+</html>
